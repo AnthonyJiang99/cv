@@ -3,79 +3,113 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Anthony's Personal Site</title>
+  <title>Anthony Jiang</title>
+  <link rel="icon" href="favicon.ico">
+
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <table cellspacing="20">
-    <tr>
-      <td><img src="images/IMG_20161227_172940047.jpg" alt="anthony profile picture" style="Width: 175px"></td>
-      <td>
-        <h1>Anthony</h1>
-        <p><em>Undergraduate student at the <a href="https://ucsd.edu/">University of California, San Diego</a></em></p>
-        <p>I am an undergrad at UCSD studying mechanical engineering.</p>
-      </td>
-    </tr>
-  </table>
-  <hr>
-  <h3>Education</h3>
-  <ul>
-    <li>University of California, San Diego</li>
-    <li>Mission San Jose High School</li>
-  </ul>
-  <hr>
-  <h3>Work Experience</h3>
-  <table cellspacing="10">
-    <thead>
-      <tr>
-        <th>Date</th>
-        <th>Work</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>May-Sept 2017</td>
-        <td>Auris Health Intern, Systems Engineering</td>
-      </tr>
-      <tr>
-        <td>Jul-Aug 2016</td>
-        <td>Auris Health Intern, Instruments</td>
-      </tr>
-    </tbody>
-  </table>
-  <hr>
-  <h3>Skills</h3>
-  <table border="1">
-    <tr>
-      <td>
-        <table cellspacing="10">
-          <tr>
-            <td>SolidWorks</td>
-            <td>🔵🔵🔵🔵⚪</td>
-          </tr>
-          <tr>
-            <td>AutoCad</td>
-            <td>🔵🔵🔵⚪⚪</td>
-          </tr>
-        </table>
-      </td>
-      <td>
-        <table cellspacing="10">
-          <tr>
-            <td>MatLab</td>
-            <td>🔵🔵🔵⚪⚪</td>
-          </tr>
-          <tr>
-            <td>Atom</td>
-            <td>🔵⚪⚪⚪⚪ </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-  <hr>
-  <a href="hobbies.html"> My Hobbies</a> <br>
-  <a href="contact.html"> Contact Me</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="">Anthony Jiang</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="navbar-nav ml-auto navbuttons">
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+  <div class="top-container">
+    <img class="top-cloud" src="images/cloud.png" alt="cloud image">
+    <h1>I'm Anthony,</h1>
+    <h2 class="intro">an engineering student.</h2>
+    <img class="bottom-cloud" src="images/cloud.png" alt="cloud image">
+    <img class="rover" src="images/mars-rover.png" alt="rover image">
+  </div>
+
+  <div class="middle-container">
+    <div class="profile">
+      <img class="profilepic" src="images/profilepic.jpg" alt="profile picture">
+      <h2>Hello.</h2>
+      <p class="hello">I'm a 3rd year Mechanical Engineering student at the University of California, San Diego.</p>
+    </div>
+    <hr>
+
+    <div class="projects" id="projects">
+      <h2>My projects.</h2>
+      <div class="project-row">
+        <iframe class="yonder" src="https://www.youtube.com/embed/ez_WXhdcG_g?start=90" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Yonder Dynamics</h3>
+        <p>Yonder is a student organization on campus that strives to compete at the University Rover Challenge, where we compete against other university teams to build a Mars Rover that can complete different tasks, such as manipulating human tools, taking soil samples, and using autonomous navigation.</p>
+      </div>
+
+      <div class="project-row">
+        <iframe class="mae3" src="https://www.youtube.com/embed/MtTvs6xd-6A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>AMAEzon delivery contest</h3>
+        <p>End of quarter competition for MAE 3. The Spring 2018 challenge was to design and build a robot to move wooden blocks from one side of the play field to scoring zones on the other side. My team placed 3rd at the end of year bracket.</p>
+      </div>
+
+      <div class="project-row">
+        <iframe class="wro" src="https://www.youtube.com/embed/nBwB_SjmsbQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>World Robot Olympiad</h3>
+        <p>WRO is a LEGO robotics competition I participated in during junior high. The 2013 challenge was to design and build an autonomous robot to deliver the "broken" statue back to an end zone, while leaving the other 3 "unbroken" statues within their own starting squares. I placed first in the Hsin-Chu regional competition before moving back to the States.</p>
+      </div>
+    </div>
+    <hr>
+
+    <div class="skills" id="skills">
+      <h2>My Skills.</h2>
+      <div class="skill-row">
+        <img class="cad" src="images/cad.jpg" alt="CAD">
+        <h3>Computer Aided Design</h3>
+        <p>I am comfortable with 3D CAD programs like SolidWorks and AutoDesk Inventor for both 3D printing and prototype manufacturing.</p>
+      </div>
+      <div class="skill-row">
+        <img class="machining" src="images/machining.jpg" alt="machined part">
+        <h3>Machining</h3>
+        <p>I also have experience in manufacturing parts with common machine shop tools.</p>
+      </div>
+      <div class="skill-row">
+        <h3>Programming</h3>
+        <p>Despite being a mechanical engineer, I've been learning basic programming skills as well. Most recently, I've been learning front-end web development (see <em>this</em> website), but I have also played with Android app development (Java) and some Python as well. </p>
+      </div>
+    </div>
+    <hr>
+    <div class="contact-me" id="contact">
+      <h2>Get In Touch</h2>
+      <h3>Interested in contacting me?</h3>
+      <p class="contact">I'm responsive to emails and texts, but less so to phone calls.</p>
+      <a class="btn" href="mailto:jiang.anthony99@gmail.com">CONTACT ME</a>
+    </div>
+  </div>
+
+
+  <div class="bottom-container">
+    <p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+  </div>
+
+
 
 </body>
 
