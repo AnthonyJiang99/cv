@@ -8,7 +8,7 @@ body {
 h1 {
   font-size: 5.5rem;
   margin: 50px auto 0 auto;
-  font-family: 'Sacramento', cursive;
+  font-family: 'Quantico', cursive;
   color: #519898;
 }
 
@@ -86,6 +86,24 @@ p {
 
 .rover {
   width: 300px;
+}
+
+.experience-row {
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+}
+
+.monarch {
+  width: 400px;
+  float:left;
+  margin-right: 30px;
+}
+
+.perfeval {
+  width: 400px;
+  float: right;
+  margin-left: 30px;
 }
 
 .project-row {
